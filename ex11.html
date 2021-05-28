@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>연습문제1</title>
+    <!-- 시멘틱태그 모양으로 flex를 이용하여 웹 제작 -->
+    <!-- DM으로 제출해주세요 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 1px solid black;
+            color: white;
+            font-size: 22px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        #wrap {
+            width: 1000px;
+        }
+
+        #header {
+            background-color: blueviolet;
+            height: 50px;
+        }
+
+        #nav {
+            background-color: green;
+            height: 50px;
+        }
+
+        #main {
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+
+        #section {
+            background-color: cadetblue;
+            height: 300px;
+            /* grow shirink basis */
+            flex: 2 1 auto;
+        }
+
+        #aside {
+            background-color: orange;
+            height: 300px;
+            flex: 1 1 auto;
+        }
+
+        #footer {
+            background-color: darkolivegreen;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="box" id="header">Header</div>
+        <div class="box" id="nav">Nav</div>
+        <div class="box" id="main">
+            <div class="box" id="section">Section</div>
+            <div class="box" id="aside">Aside</div>
+        </div>
+        <div class="box" id="footer">Footer</div>
+    </div>
+</body>
+
+</html>

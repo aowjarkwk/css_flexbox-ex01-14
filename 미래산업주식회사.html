@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>연습문제3</title>
+    <!-- flexbox로 웹페이지를 구현하시오. -->
+    <!-- DM으로 제출하세요! -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flexbox {
+            border: 1px solid gray;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        #wrap {
+            width: 1000px;
+            height: auto;
+        }
+
+        #header {
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #header h1 {
+            color: green;
+        }
+
+        #nav {
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nav a {
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0px 5px;
+        }
+
+        #main {
+            height: 500px;
+            flex-flow: row nowrap;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+
+        #aside {
+            width: 300px;
+            justify-content: center;
+            align-items: center;
+            /* grow shirink basis:콘텐츠크기만큼 */
+            flex: 3 1 300px;
+        }
+
+        #aside div {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #section {
+            width: 700px;
+            flex: 7 1 auto;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #section img {
+            width: 400px;
+            height: 300px;
+        }
+
+        #section div:nth-child(1) {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+
+        #section div:nth-child(1) div {
+            margin-top: 20px;
+        }
+
+        #logo {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        #logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        #footer {
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header" class="flexbox">
+            <h1>미래산업 주식회사</h1>
+        </div>
+        <div id="nav" class="flexbox">
+            <a href="#">홈</a>
+            <a href="#">회사소개</a>
+            <a href="#">포트폴리오</a>
+            <a href="#">자주하는질문</a>
+            <a href="#">고객센터</a>
+        </div>
+        <div id="main" class="flexbox">
+            <div id="aside" class="flexbox">
+                <div>고객지원<br>5555-8888</div>
+            </div>
+            <div id="section" class="flexbox">
+                <div>
+                    <div><img src="work_office.jpg" alt="사무실"></div>
+                    <div>효율적인 업무 시스템</div>
+                </div>
+                <div id="logo">
+                    <img src="google.png" alt="">
+                    <img src="kakao.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="flexbox">
+            <p>홍길동 주식회사 02-1234-1234 FAX:02-1111-2222
+                <br>
+                서울시 강남구 강남동 100번지
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

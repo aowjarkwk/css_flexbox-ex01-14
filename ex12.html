@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>연습문제2</title>
+    <style>
+        body {
+            background-color: darkcyan;
+        }
+
+        #wrap {
+            /* 너비를 고정으로 잡아줌. */
+            width: 1000px;
+            height: 600px;
+            margin: 50px;
+            background-color: cyan;
+        }
+        h1 {
+            text-align: center;
+            height: 100px;
+        }
+        #header {
+            line-height: 100px;
+            vertical-align: middle;
+        }
+        #nav {
+            height:25px;
+            background-color: skyblue;
+            text-align: center;
+        }
+        #nav a{
+            color:white;
+            margin:5px;
+        }
+        #main{
+            display: flex;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+        #aside{
+            flex-grow: 2;
+            margin:10px;
+            padding:15px;
+            border:1px solid gray;
+        }
+        
+        #footer {
+        height: 45px;
+        background-color: gray;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 45px;
+        margin-top: 20px;
+        }
+        #footer a{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>The Daily Kitteh</h1>
+        </div>
+        <div id="nav">
+            <a href="#">Feral Adventures</a>
+            <a href="#">Kibble Kibbitz</a>
+            <a href="#">Tail Twitch Tales</a>
+            <a href="#">Sunny Window Reviews</a>
+        </div>
+        <div id="main">
+            <div id="aside">
+                <div id="a">
+                    <h4>Kittehs of the Day</h4>
+                </div>
+                <img src="kitten_200x200 (1).jpg" alt="고양이">
+                <ul>
+                    <li><small>●</small> Spot</li>
+                    <li><small>●</small> Adeline</li>
+                    <li><small>●</small> Perspex</li>
+                    <li><small>●</small> Mr. Grumpy</li>
+                </ul>
+            </div>
+            <div id="section">
+                <h3>Busy Kittehs Very Busy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque harum illum, laudantium, tempore
+                    sed rerum laboriosam accusantium hic magnam voluptas natus, facere qui nostrum porro possimus a
+                    tempora voluptatibus delectus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque harum illum, laudantium, tempore
+                    sed rerum laboriosam accusantium hic magnam voluptas natus, facere qui nostrum porro possimus a
+                    tempora voluptatibus delectus.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <a href="#">Subscribe</a>
+            <a href="#">Pat the Editors</a>
+            <a href="#">Send us Catnip</a>
+        </div>
+    </div>
+</body>
+</html>

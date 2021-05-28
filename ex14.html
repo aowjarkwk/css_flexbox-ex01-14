@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>연습문제4</title>
+    <style>
+        .wrap{
+            width:800px;
+            border:1px solid gray;
+        }
+        .header{
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid gray;
+            padding:20px 0px;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            height: 400px;
+        
+        }
+        input[type=text]{
+            width: 350px;
+            height: 50px;
+            margin: 20px;
+            margin-top:50px;
+            
+        }
+        input[type="password"]{
+            width:350px;
+            height: 50px;
+            margin:20px
+        }
+        input[type=button]{
+            width: 350px;
+            height: 50px;
+            background-color: rgb(69, 13, 199);
+            margin:20px;
+            color: white;
+        }
+        #ad{
+            display: flex;
+            justify-content: center;
+            width:300px;
+            border:1px solid gray;
+            margin: 50px;
+            height: 300px;
+
+        }
+        a{
+            color:rgb(173, 173, 173);
+        }
+        #login{
+            width: 350px;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        input[type=checkbox]{
+            margin-left: 10px;
+        }
+        #login label{
+            margin-right: 40px;
+        }
+        #login 
+        
+        #on{
+            color:purple;
+            font-weight: bold;
+            margin-left
+            
+        }
+        #idpass{
+            display: flex;
+            justify-content: center;
+        }
+        #idpass a{
+            text-decoration: none;
+        }
+        .footer{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header"><img src="daum_logo.png" alt=""></div>
+        <div class="main">
+        <div class="inputbox">
+            <input type="text" placeholder="&nbsp&nbsp아이디 입력"><br>
+            <input type="password" placeholder="&nbsp&nbsp●●●●●●"><br>
+            <input type="button" value="로그인"><br>
+            <div id="login">
+            <input type="checkbox"> 
+            
+            <label>로그인 상태 유지</label>
+            <span>IP보안</span> 
+            <span id="on">ON</span><br><br>
+        </div>
+            <div id="idpass">
+                <a href="#">아이디 찾기&nbsp&nbsp</a>|
+                <a href="#">&nbsp&nbsp비밀번호 찾기</a>
+            </div>  
+        </div>
+        <div class="ad"><img id="ad"src="banner.jpg" alt=""></div>
+    </div>
+    </div>
+    <div class="footer"> © Kakao Corp. | 고객센터</div>
+    
+    
+</body>
+</html>
